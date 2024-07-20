@@ -1,0 +1,195 @@
+/*.card {
+  position: relative;
+  width: 100%; *//* Ajustar para que tome el ancho completo del contenedor */
+ /* height: 200px; *//* Alto total de la tarjeta */
+  /* background-color: transparent; */ /* Fondo transparente */
+ /* margin: 0;
+}
+
+.square {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+.square1 {
+  position: relative; */ /* Asegura que el posicionamiento absoluto de los elementos internos funcione correctamente */
+ /* background-color: #6A6A6A; /* Color de fondo */
+ /* background-image: url('../img/negra.png'); /* Ruta de la imagen */
+ /* background-size: 50% 110%; /* Ancho 50% y alto 110% del cuadrado */
+ /* background-repeat: no-repeat; /* Evita que la imagen se repita */
+ /* background-position: left; /* Posición a la izquierda */
+ /* top: 0;
+  left: 0;
+  color: white; /* Color del texto */
+/*  text-align: center; /* Alinea el texto a la derecha */
+/*  display: flex; /* Usamos flexbox para centrar el contenido */
+/*  align-items: center; /* Centra verticalmente */
+/*  justify-content: flex-end;; /* Centra horizontalmente */
+/*  padding: 20px; /* Espaciado interno */
+/*}
+
+
+.square2 {
+  background-color: #282828; /* Color de fondo */
+  bottom: 0;
+  left: 0;
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.square2 p {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-family: 'inter';
+  font-style: italic; /* Establece el estilo itálico */
+  display: block; /* Asegura que el párrafo sea un bloque para que sea visible */
+  font-size: 14px; /* Tamaño de la fuente del párrafo */
+}
+
+
+
+
+.custom-card-title {
+  position: relative; /* Establece la posición relativa para que la línea se posicione con respecto a este */
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 26px !important;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  margin: 0; /* Modificar el margen vertical según sea necesario */
+  margin-bottom: 6px;
+}
+
+.custom-card-title::after {
+  content: ''; /* Agrega contenido pseudo-elemento */
+  position: absolute; /* Establece la posición absoluta */
+  bottom: 0px; /* Ajusta la posición vertical debajo del texto */
+  left: 0; /* Ajusta la posición horizontal al lado izquierdo */
+  width: 100%; /* Ancho de la línea para que se extienda completamente */
+  height: 2px; /* Grosor de la línea */
+  background-color: #17D0F9; /* Color de la línea */
+}
+
+/*CARD 3*/ /*CARD 4*/
+/*h2.card3titulo::after,
+h2.card4titulo::after  {
+  content: '';  Agrega contenido pseudo-elemento 
+  position: absolute;  Establece la posición absoluta 
+  bottom: -2px; Coloca la línea justo debajo del texto 
+  left: 0;  Alinea la línea con el borde izquierdo del h3 
+  width: 220px;  Ancho de la línea 
+  height: 2px;  Grosor de la línea 
+  background-color: #17D0F9; /* Color de la línea 
+} */
+
+
+
+.custom-card-text {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-family: 'inter';
+  display: block; /* Asegura que el párrafo sea un bloque para que sea visible */
+  font-size: 14px; /* Tamaño de la fuente del párrafo */
+  color: white;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.custom-secondary-text {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-family: 'inter';
+  font-style: italic; /* Establece el estilo itálico */
+  display: block; /* Asegura que el párrafo sea un bloque para que sea visible */
+  font-size: 14px; /* Tamaño de la fuente del párrafo */
+  color: white;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+
+.tarjeta {
+  position: relative;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  width: 50%; /* La mitad del contenedor tarjeta */
+  float: left; /* Para que el texto se alinee a la derecha */
+}
+
+.image-container img {
+  width: 100%; /* La imagen ocupa el 100% del contenedor */
+  height: auto; /* Se mantiene la proporción */
+  display: block;
+}
+
+.text-block {
+  width: 50%; /* La otra mitad del contenedor tarjeta */
+  float: right; /* Para alinear a la derecha */
+}
+
+.title-paragraph h2,
+.title-paragraph p {
+  margin: 0;
+  color: white;
+}
+
+.additional-text,
+.additional-text-below {
+  width: 100%; /* Ocupar todo el ancho */
+  clear: both; /* Para que no se superponga con los elementos anteriores */
+  padding: 10px;
+}
+
+.additional-text p,
+.additional-text-below p {
+  margin: 0;
+  color: black; /* Cambiar el color del texto adicional debajo */
+}
+
+
+
+
+
+  <div class="row row-cols-1 row-cols-md-1 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="custom-title-container d-flex flex-row">
+            <img src="img/negra.png" class="card-img-start" alt="..." style="max-width: 100%; height: auto;">
+            <div class="d-flex flex-column ms-1" style="flex-grow: 1;">
+              <div class="custom-title-container">
+                <h2 class="custom-card-title">AMARA DAVIS</h2>
+                <p class="custom-card-text">Compositora, 27 años</p>
+              </div>
+            </div>
+          </div>
+          <div class="custom-text-container mt-auto" style="height: 100px;">
+            <p class="custom-secondary-text">“¡Siempre recomiendo a mis amigos esta página para que se mantengan informados!”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="tarjeta">
+  <div class="image-container">
+    <img src="img/negra.png" alt="Imagen">
+  </div>
+  <div class="text-block">
+    <div class="title-paragraph">
+      <h2>Título</h2>
+      <p>Texto de valoración</p>
+    </div>
+  </div>
+  <div class="additional-text">
+    <p>Texto adicional</p>
+  </div>
+  <div class="additional-text-below">
+    <p>Texto adicional debajo</p>
+  </div>
+</div>
